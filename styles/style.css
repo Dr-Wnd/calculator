@@ -68,12 +68,12 @@ input {
     margin-bottom: 10px;
   }
   .button2{
-    background-color: #fff;
+    background-color:lawngreen;
     border: 1 solid #e2e8f0;
     border-radius: 12px;
     width:50%;
     height:40px;
-    color: #0d172a;
+    color:black;
     text-align: center;
     font-weight: 800;
     text-decoration: none #0d172a solid;
