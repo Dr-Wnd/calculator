@@ -1,4 +1,4 @@
-const group = document.getElementById('group');
+    const group = document.getElementById('group');
     const tax = document.getElementById('tax');
     const sum = document.querySelectorAll('.calc');
     const totalDisplay = document.getElementById('total');
@@ -10,7 +10,7 @@ const group = document.getElementById('group');
           total += parseInt(calc.value);
         }
       });
-      totalDisplay.textContent = `₴${total}`;
+      totalDisplay.textContent = `${total} грн.`;
     }
 
     group.addEventListener('change', calculateTotal);
@@ -22,5 +22,10 @@ const group = document.getElementById('group');
     // Скинути
   document.getElementById("reset").addEventListener("click",()=>{  
     const output=document.querySelector("#total");
+    sum.forEach(calc => {
+      if (calc.value !== 0) {
+          calc.value = "";
+        }
+    })
      output.textContent=" ";
   });

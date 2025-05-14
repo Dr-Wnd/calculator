@@ -8,22 +8,23 @@
   
 </head>
 <body> 
-  
+  <div class="total">Загальна вартість: <span id="total">0 грн.</span></div>
+
   <div class="calculator">
    
   <justify><h1>Калькулятор вартості послуг</h1></justify>
 
   <label for="group">Група ФОП:</label>
   <select id="group">
-    <option value="500">1 група (₴500)</option>
-    <option value="700">2 група (₴700)</option>
-    <option value="1000">3 група (₴1000)</option>
+    <option value="500">1 група 500 грн.</option>
+    <option value="700">2 група 700 грн.</option>
+    <option value="1000">3 група 1000 грн.</option>
   </select>
 
   <label for="tax">Система оподаткування:</label>
   <select id="tax">
-    <option value="0">Спрощена (₴0)</option>
-    <option value="300">Загальна (₴300)</option>
+    <option value="0">Спрощена 0 </option>
+    <option value="300">Загальна 300 грн.</option>
   </select>
   <label> Ведення бухгалтерії<input type="number" value="" class="calc" placeholder="Введіть число"/></label>
   <label> Подача звітності<input type="number" value="" class="calc" placeholder="Введіть число"/></label>
@@ -33,8 +34,7 @@
   <button id="reset" class="button2">СКИНУТИ</button>
   </div>
 </div>
-  <div class="total">Загальна вартість: <span id="total">₴0</span></div>
-
+  
 
   <script src="./scripts/calculator.js">
   

@@ -1,11 +1,10 @@
  body {
     font-family: Arial, sans-serif;
-    font-size: 28px;
+    font-size: 24px;
     max-width: 600px;
     margin: auto;
     padding: 10px;
     background-color: rgb(232, 220, 220);
-
  }
    h1 {
     font-size: 24px;
@@ -21,7 +20,7 @@
      text-align: center;
  }
  #group, #tax {
-    height: 40px;
+    height: 30px;
     width: 170px;
     font-size: 20px;
  }
@@ -31,6 +30,7 @@
     height: 550px;
     background-color: green;
     position: absolute;
+    margin-top: 20px;
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -44,7 +44,7 @@
     align-items:baseline;
     flex-direction: row;
     width: 300px;
-    height: 70px;
+    height: 60px;
     margin-top: 0;
     
     }
@@ -53,19 +53,12 @@ input {
     width: 70%;
     margin-top: 7px;
 }
-
-.button_container{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  
-
 .button1{
     background-color: #fff;
     border: 1 solid #e2e8f0;
-    border-radius: 1.2rem;
+    border-radius: 12px;
     width:50%;
-    height:50px;
+    height:40px;
     color: #0d172a;
     text-align: center;
     text-decoration: none #0d172a solid;
@@ -76,9 +69,9 @@ input {
   .button2{
     background-color: #fff;
     border: 1 solid #e2e8f0;
-    border-radius: 1.2rem;
+    border-radius: 12px;
     width:50%;
-    height:50px;
+    height:40px;
     color: #0d172a;
     text-align: center;
     font-weight: 800;
@@ -86,44 +79,46 @@ input {
     margin-left:50px;
     margin-bottom: 10px;
   }
+   .button1:hover {
+    background-color: darkorange;
+    cursor: pointer;
+    color:gainsboro;
+   } 
+   .button2:hover {
+    background-color: aquamarine;
+    cursor: pointer;
+    color: red;
+  }
 
   @media (max-width: 320px) {
   body {
     font-size: 18px;
-    padding: 5px;
+    padding: 0;
   }
-
   .calculator {
     width: 95%;
-    height: auto;
-    padding: 20px;
+    height: 100hv;
+    margin-top: 60px;
+    padding: 10px;
     border-radius: 30px;
   }
-
   #group,
   #tax {
     width: 100%;
     font-size: 16px;
     height: 36px;
   }
-
   .flex {
     flex-direction: column;
     width: 100%;
     align-items: stretch;
     gap: 10px;
   }
-
   input {
     width: 100%;
     padding: 6px;
   }
-
-  .button_container {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
+  
   .button1,
   .button2 {
     width: 100%;
@@ -132,7 +127,8 @@ input {
 
   h1,
   .total {
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
+    margin-top: 0;
   }
 }
