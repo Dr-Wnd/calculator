@@ -1,0 +1,138 @@
+ body {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+    background-color: rgb(232, 220, 220);
+
+ }
+   h1 {
+    font-size: 24px;
+ }
+   label, select, input {
+    display: block;
+    margin-bottom: 10px;
+ }
+   .total {
+     font-size: 24px;
+     font-weight: bold;
+     margin-top: 20px;
+     text-align: center;
+ }
+ #group, #tax {
+    height: 40px;
+    width: 170px;
+    font-size: 20px;
+ }
+
+ .calculator {
+    max-width: 500px;
+    height: 550px;
+    background-color: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 10px 20px 0px 40px;
+    border-radius: 50px;
+    color: white;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items:baseline;
+    flex-direction: row;
+    width: 300px;
+    height: 70px;
+    margin-top: 0;
+    
+    }
+input {
+    padding: 7px;
+    width: 70%;
+    margin-top: 7px;
+}
+
+.button_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+
+.button1{
+    background-color: #fff;
+    border: 1 solid #e2e8f0;
+    border-radius: 1.2rem;
+    width:50%;
+    height:50px;
+    color: #0d172a;
+    text-align: center;
+    text-decoration: none #0d172a solid;
+    font-weight: 800;
+    margin-top:10px;
+    margin-bottom: 10px;
+  }
+  .button2{
+    background-color: #fff;
+    border: 1 solid #e2e8f0;
+    border-radius: 1.2rem;
+    width:50%;
+    height:50px;
+    color: #0d172a;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none #0d172a solid;
+    margin-left:50px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 320px) {
+  body {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .calculator {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  #group,
+  #tax {
+    width: 100%;
+    font-size: 16px;
+    height: 36px;
+  }
+
+  .flex {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  input {
+    width: 100%;
+    padding: 6px;
+  }
+
+  .button_container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .button1,
+  .button2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  h1,
+  .total {
+    font-size: 20px;
+    text-align: center;
+  }
+}
